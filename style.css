@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F6f6f6;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+}
+
+.nav-links {
+    display: flex;
+
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-links a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+header {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background: url(pic/bg.jpg) no-repeat center /cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.header-content {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.btn {
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+
+}
+
+header h1,
+about h2 {
+    font-size: 8vmin;
+    color: white;
+
+
+}
+
+h1 {
+
+    font-size: 6vmin;
+    color: rgb(0, 0, 0);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+p {
+    margin: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #6f8686, #48c6ef);
+    color: white;
+    padding: 50px 0;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 50%;
+}
+
+
+.about-image {
+    width: 350px;
+    border-radius: 18px;
+}
+
+.details-box {
+    display: flex;
+}
+
+
+.details {
+    list-style: none;
+    margin: 10px 55px 10px 0;
+}
+
+.details li {
+    margin: 8px 0;
+}
+
+.col img {
+
+    height: 220px;
+    width: 310px;
+    border-radius: 4px 20px 4px 20px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.col {
+    text-align: center;
+}
+
+.education-container {
+    background-color: #F2F2F2;
+    padding-bottom: 55px;
+
+}
+
+.education-container h1,
+.skill-container h1 {
+    padding: 55px 0;
+}
+
+.row {
+
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+i {
+    margin-left: 4px;
+}
+
+.skill-container {
+
+    padding-bottom: 55px;
+
+
+
+
+}
+
+
+
+.skill-grid-container {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+
+
+
+
+
+    grid-gap: 20px;
+}
+
+
+
+
+.item {
+    text-align: center;
+
+
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+
+
+
+.item img {
+    height: 40px;
+
+}
+
+
+
+
+.row-foot {
+    background-image: linear-gradient(to right, #01193b, #203568, #425398, #6972cb, #9393ff);
+    padding: 45px 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0 auto;
+}
+
+.col-foot {
+    width: 30%;
+
+}
+
+.address-links li,
+.brand-links li {
+    list-style: none;
+    margin: 20px 0;
+    margin-right: 25px;
+
+}
+
+.address-links i {
+    margin-right: 10px;
+}
+
+.brand-links {
+    display: flex;
+
+}
+
+
+.brand-links a,
+.address-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.brand-links i {
+    font-size: 25px;
+}
+
+hr {
+    width: 70%;
+    color: white;
+
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.menubtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+
+    display: none;
+  
+}
+
+@media only screen and (max-width : 850px) {
+
+
+    .menubtn {
+        display: block;
+
+    }
+
+    .navbar {
+        padding: 0;
+
+        flex-direction: column;
+    }
+
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .nav-links {
+
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(212, 209, 209);
+
+        margin-top: -900px;
+        transition: all 0.5s ease;
+
+    }
+
+    .nav-links li {
+        margin: 20px auto;
+
+    }
+
+    .header-content {
+        width: 75%;
+
+
+    }
+
+    .about-container {
+
+        width: 100%;
+        flex-direction: column;
+
+
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+ 
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+    .right {
+
+        width: 90%;
+        margin: 50px auto;
+    }
+
+
+    .row {
+        flex-direction: column;
+
+
+
+    }
+
+    .col {
+        margin: 20px 0;
+
+    }
+    .skill-grid-container{
+        width: 80%;
+    }
+
+    
+
+
+    .row-foot {
+        flex-direction: column;
+
+
+    }
+
+    .col-foot {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+
+
+
+    }
+
+
+
+}
