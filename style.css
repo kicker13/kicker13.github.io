@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -19,8 +19,8 @@
     top: 0;
     left: 0;
     z-index: 100;
- 
- 
+
+
 
 
 }
@@ -77,9 +77,9 @@ a {
 .btn {
     align-items: center;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
-    background : linear-gradient(#5AFF15 , #00B712);
+    background: linear-gradient(#5AFF15, #00B712);
     color: white;
 
 }
@@ -97,7 +97,7 @@ h1 {
     font-size: 6vmin;
     color: rgb(0, 0, 0);
 
-    
+
 }
 
 h3 {
@@ -106,7 +106,7 @@ h3 {
 
 p {
     margin: 20px 0;
-   
+
 }
 
 .text-center {
@@ -201,7 +201,7 @@ i {
     margin: 0 auto;
     width: 80%;
     display: grid;
-    
+
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
 
@@ -259,7 +259,7 @@ i {
 }
 
 .address-links i {
-  margin-right: 6px;
+    margin-right: 6px;
 }
 
 .brand-links {
@@ -288,6 +288,34 @@ hr {
     line-height: 2;
 }
 
+.project-item {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.pro {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0px 10px;
+
+
+
+
+}
+
+.pro i {
+    margin-right: 6px;
+}
+
+.pro a {
+    text-decoration: none;
+    color: white;
+}
+
 .menubtn {
     position: absolute;
     top: 30px;
@@ -295,7 +323,7 @@ hr {
     cursor: pointer;
 
     display: none;
-  
+
 }
 
 @media only screen and (max-width : 850px) {
@@ -328,7 +356,7 @@ hr {
 
         margin-top: -900px;
         transition: all 0.5s ease;
-       
+
 
     }
 
@@ -354,7 +382,7 @@ hr {
     .left {
         display: flex;
         justify-content: center;
- 
+
         width: 100%;
 
         margin: 0 auto;
@@ -384,11 +412,12 @@ hr {
         width: 80%;
 
     }
-    .skill-grid-container{
+
+    .skill-grid-container {
         width: 80%;
     }
 
-    
+
 
 
     .row-foot {
@@ -409,6 +438,18 @@ hr {
 
     }
 
+    .project-item {
+        flex-direction: column;
+
+    }
+
+    .pro {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        width: 80%;
+
+    }
 
 
 }
