@@ -380,7 +380,8 @@ hr {
     }
 
     .col {
-        margin: 20px 0;
+        margin: 20px auto;
+        width: 80%;
 
     }
     .skill-grid-container{
