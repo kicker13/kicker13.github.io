@@ -34,8 +34,9 @@ html {
 
 .nav-links li {
     list-style: none;
-    margin: 0 15px;
+    margin: 0 12px;
 }
+
 
 .nav-links a {
     text-decoration: none;
@@ -44,8 +45,8 @@ html {
     color: rgb(0, 0, 0);
 }
 
-.nav-links a:hover {
 
+.nav-links a:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -56,14 +57,9 @@ header {
     height: 100vh;
     width: 100%;
     background: url(pic/bg.jpg) no-repeat top center /cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
-
 }
 
 .header-content {
@@ -111,7 +107,7 @@ h3 {
 
 p {
     margin: 20px 0;
-    
+
 
 }
 
@@ -125,7 +121,7 @@ p {
     align-items: center;
     background-image: linear-gradient(to bottom right, #6f8686, #48c6ef);
     color: rgb(255, 255, 255);
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .left {
@@ -148,6 +144,7 @@ p {
 
 
 .details {
+
     list-style: none;
     margin: 10px 55px 10px 0;
 }
@@ -171,14 +168,15 @@ p {
 
 .education-container {
     background-color: #F2F2F2;
-    padding-bottom: 55px;
+    padding: 40px 0;
+ 
 
 }
 
 .education-container h1,
-.skill-container h1
-{
-    padding: 55px 0;
+.skill-container h1 {
+    padding-bottom: 25px;
+    
 }
 
 .row {
@@ -194,8 +192,8 @@ i {
 }
 
 .skill-container {
-
-    padding-bottom: 55px;
+    padding: 40px 0;
+ 
 
 
 
@@ -205,6 +203,7 @@ i {
 
 
 .skill-grid-container {
+  
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -309,16 +308,12 @@ hr {
 .portfolio-container {
     margin: 40px 0;
 }
- 
-h1{
+
+h1 {
     margin-bottom: 30px;
 }
 
-.portfolio-container 
-
-
-
-.project {
+.portfolio-container .project {
     color: white;
     display: flex;
     justify-content: center;
@@ -353,7 +348,7 @@ h1{
 
     .navbar {
         padding: 0;
-
+       
         flex-direction: column;
     }
 
@@ -374,7 +369,7 @@ h1{
         height: 60vh;
         width: 100%;
         justify-content: center;
-        background-color: rgb(212, 209, 209);
+  
 
         margin-top: -900px;
         transition: all 0.5s ease;
@@ -383,8 +378,8 @@ h1{
 
     .nav-links li {
         margin: 10px auto;
-  
-       
+
+
 
     }
 
@@ -430,14 +425,17 @@ h1{
 
     .row {
         flex-direction: column;
+        
 
 
 
     }
 
     .col {
-        margin: 40px auto;
+
+        padding-bottom: 55px;
         width: 80%;
+        margin: 0 auto;
 
 
 
