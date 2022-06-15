@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
 
@@ -97,7 +97,7 @@ h1 {
     font-size: 6vmin;
     color: rgb(0, 0, 0);
 
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 h3 {
@@ -106,7 +106,7 @@ h3 {
 
 p {
     margin: 20px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
 }
 
 .text-center {
@@ -115,7 +115,7 @@ p {
 
 .about-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom right, #6f8686, #48c6ef);
     color: white;
