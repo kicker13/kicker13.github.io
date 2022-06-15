@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -169,14 +170,14 @@ p {
 .education-container {
     background-color: #F2F2F2;
     padding: 40px 0;
- 
+
 
 }
 
 .education-container h1,
 .skill-container h1 {
     padding-bottom: 25px;
-    
+
 }
 
 .row {
@@ -193,7 +194,7 @@ i {
 
 .skill-container {
     padding: 40px 0;
- 
+
 
 
 
@@ -203,7 +204,7 @@ i {
 
 
 .skill-grid-container {
-  
+
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -246,7 +247,7 @@ i {
     padding: 45px 0;
     color: white;
     display: flex;
-    justify-content:  space-around;
+    justify-content: space-around;
 
     margin: 0 auto;
 }
@@ -313,28 +314,38 @@ h1 {
     margin-bottom: 30px;
 }
 
- .project {
-    color: white;
+.project {
+
+  width: 80%;
+  margin: 0 auto;
     display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+ 
+    
+
 }
 
 
 .project a {
     text-decoration: none;
-    color: wheat;
-    margin-left: 8px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+
 }
 
 
 .project-item {
-    background-color: black;
-    border-radius: 6px;
-    padding: 10px;
-    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px;
+
+    
+
 }
+
 
 
 
@@ -349,7 +360,7 @@ h1 {
 
     .navbar {
         padding: 0;
-       
+
         flex-direction: column;
     }
 
@@ -370,7 +381,7 @@ h1 {
         height: 60vh;
         width: 100%;
         justify-content: center;
-  
+
 
         margin-top: -900px;
         transition: all 0.5s ease;
@@ -379,7 +390,7 @@ h1 {
 
     .nav-links li {
         margin: 10px auto;
-        
+
 
 
 
@@ -427,7 +438,7 @@ h1 {
 
     .row {
         flex-direction: column;
-        
+
 
 
 
@@ -464,6 +475,17 @@ h1 {
         margin: 15px auto;
     }
 
+
+    .project-item{
+        width: 90%;
+        margin: 25px 0;
+    }
+
+
+
+
+
+
     .mobile-menu {
         margin-top: 0px;
 
@@ -471,16 +493,7 @@ h1 {
 
     }
 
-    .project {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .project-item {
-        margin-bottom: 15px;
-
-    }
+  
 
 
 }
