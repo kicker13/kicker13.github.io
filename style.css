@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html{
@@ -19,9 +19,10 @@ html{
     align-items: center;
     background-color: #F6f6f6;
     position: sticky;
-    top: 0;
-    left: 0;
+   top: 0;
+   left: 0;
     z-index: 100;
+
 
 
 }
@@ -62,6 +63,7 @@ header {
 
 
 
+
 }
 
 .header-content {
@@ -80,7 +82,9 @@ a {
     padding: 5px 10px;
     border-radius: 25px;
     cursor: pointer;
-    background : linear-gradient(#2bf303 , #025e07 );
+
+background-image: linear-gradient(315deg, #427e0a 0%, #76da6d 74%);
+
     color: white;
 
 }
@@ -98,7 +102,6 @@ h1 {
     font-size: 6vmin;
     color: rgb(0, 0, 0);
 
-    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -107,7 +110,7 @@ h3 {
 
 p {
     margin: 20px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .text-center {
@@ -161,6 +164,7 @@ p {
 
 .col {
     text-align: center;
+    width: 30%;
 }
 
 .education-container {
@@ -176,7 +180,7 @@ p {
 
 .row {
 
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -347,6 +351,10 @@ margin: 0 auto;
         left: 15px;
     }
 
+header{
+
+    background: url(pic/bg.jpg) no-repeat left center /cover;
+}
     .nav-links {
 
         flex-direction: column;
@@ -408,7 +416,12 @@ margin: 0 auto;
     }
 
     .col {
-        margin: 20px 0;
+        margin: 20px auto;
+        width: 80%;
+ 
+               
+        
+         
 
     }
     .skill-grid-container{
