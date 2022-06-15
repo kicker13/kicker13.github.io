@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 .logo {
-    width: 50px;
+    width: 60px;
 }
 
 .navbar {
@@ -19,8 +22,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-
-
 
 
 }
@@ -79,7 +80,7 @@ a {
     padding: 5px 10px;
     border-radius: 25px;
     cursor: pointer;
-    background: linear-gradient(#5AFF15, #00B712);
+    background : linear-gradient(#2bf303 , #025e07 );
     color: white;
 
 }
@@ -97,7 +98,7 @@ h1 {
     font-size: 6vmin;
     color: rgb(0, 0, 0);
 
-
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -106,7 +107,7 @@ h3 {
 
 p {
     margin: 20px 0;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .text-center {
@@ -160,7 +161,6 @@ p {
 
 .col {
     text-align: center;
-    width: 30%;
 }
 
 .education-container {
@@ -170,13 +170,13 @@ p {
 }
 
 .education-container h1,
-.skill-container h1 {
+.skill-container h1 , .portfolio-container h1 {
     padding: 55px 0;
 }
 
 .row {
 
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -201,7 +201,7 @@ i {
     margin: 0 auto;
     width: 80%;
     display: grid;
-
+    
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
 
@@ -259,7 +259,7 @@ i {
 }
 
 .address-links i {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 .brand-links {
@@ -288,34 +288,6 @@ hr {
     line-height: 2;
 }
 
-.project-item {
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.pro {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 0px 10px;
-
-
-
-
-}
-
-.pro i {
-    margin-right: 6px;
-}
-
-.pro a {
-    text-decoration: none;
-    color: white;
-}
-
 .menubtn {
     position: absolute;
     top: 30px;
@@ -323,8 +295,37 @@ hr {
     cursor: pointer;
 
     display: none;
-
+  
 }
+
+
+.portfolio-container{
+    margin: 30px;
+}
+
+.project {
+color: white;
+display: flex;
+justify-content: center;
+
+width: 80%;
+margin: 0 auto;
+}
+.project a{
+    text-decoration: none;
+    color: wheat;
+    margin-left: 8px;
+}
+
+.project-item{
+    background-color: black;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 8px;
+}
+
+
+
 
 @media only screen and (max-width : 850px) {
 
@@ -357,12 +358,11 @@ hr {
         margin-top: -900px;
         transition: all 0.5s ease;
 
-
     }
 
     .nav-links li {
-        margin: 20px 0px;
-        margin-left: 25px;
+        margin: 20px auto;
+
     }
 
     .header-content {
@@ -382,7 +382,7 @@ hr {
     .left {
         display: flex;
         justify-content: center;
-
+ 
         width: 100%;
 
         margin: 0 auto;
@@ -408,16 +408,14 @@ hr {
     }
 
     .col {
-        margin: 20px auto;
-        width: 80%;
+        margin: 20px 0;
 
     }
-
-    .skill-grid-container {
+    .skill-grid-container{
         width: 80%;
     }
 
-
+    
 
 
     .row-foot {
@@ -438,16 +436,14 @@ hr {
 
     }
 
-    .project-item {
+    .project{
+        display: flex;
         flex-direction: column;
-
+        
     }
 
-    .pro {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px auto;
-        width: 80%;
+    .project-item{
+        margin: 15px 0;
 
     }
 
