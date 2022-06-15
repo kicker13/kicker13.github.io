@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
 }
 
 .navbar {
@@ -19,8 +19,8 @@ html{
     align-items: center;
     background-color: #F6f6f6;
     position: sticky;
-   top: 0;
-   left: 0;
+    top: 0;
+    left: 0;
     z-index: 100;
 
 
@@ -45,8 +45,8 @@ html{
 }
 
 .nav-links a:hover {
-    background-color: black;
-    color: white;
+
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ header {
     color: white;
     height: 100vh;
     width: 100%;
-    background: url(pic/bg.jpg) no-repeat center /cover;
+    background: url(pic/bg.jpg) no-repeat top center /cover;
 
     display: flex;
     align-items: center;
@@ -83,7 +83,8 @@ a {
     border-radius: 25px;
     cursor: pointer;
 
-background-image: linear-gradient(315deg, #427e0a 0%, #76da6d 74%);
+    background-color: #7ec145;
+    box-shadow: 0 12px 21px -6px #7ec145;
 
     color: white;
 
@@ -110,6 +111,7 @@ h3 {
 
 p {
     margin: 20px 0;
+    
 
 }
 
@@ -122,7 +124,7 @@ p {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom right, #6f8686, #48c6ef);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 50px 0;
 }
 
@@ -174,7 +176,8 @@ p {
 }
 
 .education-container h1,
-.skill-container h1 , .portfolio-container h1 {
+.skill-container h1
+{
     padding: 55px 0;
 }
 
@@ -205,7 +208,7 @@ i {
     margin: 0 auto;
     width: 80%;
     display: grid;
-    
+
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
 
@@ -299,29 +302,38 @@ hr {
     cursor: pointer;
 
     display: none;
-  
+
 }
 
 
-.portfolio-container{
+.portfolio-container {
+    margin: 40px 0;
+}
+ 
+h1{
     margin-bottom: 30px;
 }
 
-.project {
-color: white;
-display: flex;
-justify-content: center;
+.portfolio-container 
 
-width: 80%;
-margin: 0 auto;
+
+
+.project {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+    margin: 0 auto;
 }
-.project a{
+
+.project a {
     text-decoration: none;
     color: wheat;
     margin-left: 8px;
 }
 
-.project-item{
+.project-item {
     background-color: black;
     border-radius: 6px;
     padding: 10px;
@@ -351,14 +363,15 @@ margin: 0 auto;
         left: 15px;
     }
 
-header{
+    header {
 
-    background: url(pic/bg.jpg) no-repeat left center /cover;
-}
+        background: url(pic/bg.jpg) no-repeat left center /cover;
+    }
+
     .nav-links {
 
         flex-direction: column;
-        height: 100vh;
+        height: 60vh;
         width: 100%;
         justify-content: center;
         background-color: rgb(212, 209, 209);
@@ -369,8 +382,15 @@ header{
     }
 
     .nav-links li {
-        margin: 20px auto;
+        margin: 10px auto;
+  
+       
 
+    }
+
+
+    header {
+        background: url(pic/bg.jpg) no-repeat top left /cover;
     }
 
     .header-content {
@@ -390,7 +410,7 @@ header{
     .left {
         display: flex;
         justify-content: center;
- 
+
         width: 100%;
 
         margin: 0 auto;
@@ -410,7 +430,7 @@ header{
 
     .row {
         flex-direction: column;
-     
+
 
 
     }
@@ -418,18 +438,19 @@ header{
     .col {
         margin: 40px auto;
         width: 80%;
- 
-               
-        
-         
+
+
+
+
 
     }
-    .skill-grid-container{
+
+    .skill-grid-container {
         width: 80%;
-       
+
     }
 
-    
+
 
 
     .row-foot {
@@ -450,14 +471,14 @@ header{
 
     }
 
-    .project{
+    .project {
         display: flex;
         flex-direction: column;
-        
+
     }
 
-    .project-item{
-        margin-bottom: 15px ;
+    .project-item {
+        margin-bottom: 15px;
 
     }
 
